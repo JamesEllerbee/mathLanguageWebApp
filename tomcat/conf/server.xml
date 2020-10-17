@@ -150,7 +150,7 @@
       </Realm>
 
      <!-- change host to domain -->
-      <Host name="localhost"  appBase="webapps"
+      <Host name="www.math-app.xyz"  appBase="webapps"
             unpackWARs="true" autoDeploy="true">
           <Context path="" docBase="mathApp" />
         <!-- SingleSignOn valve, share authentication between web applications

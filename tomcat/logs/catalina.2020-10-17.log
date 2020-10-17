@@ -46,3 +46,7 @@
 17-Oct-2020 17:30:35.798 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
 17-Oct-2020 17:30:35.799 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mathApp] has started
 17-Oct-2020 17:30:35.834 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mathApp] is completed
+17-Oct-2020 17:56:52.247 INFO [Thread-4] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+17-Oct-2020 17:56:52.383 INFO [Thread-4] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+17-Oct-2020 17:56:52.394 INFO [Thread-4] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+17-Oct-2020 17:56:52.434 INFO [Thread-4] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
