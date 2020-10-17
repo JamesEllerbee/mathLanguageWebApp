@@ -7,7 +7,10 @@ import csu.mathapp.CoreManager;
 @WebServlet("/application") //configure the request url for this servlet 
 public class MathApp extends HttpServlet {
 
-    final String head = "";
+    //todo add html head stuff
+    final String head = "<head>"
+    + "<link rel=\"stylesheet\" href=\"../../assets/style.css\">"
+    + "</head>";
     
     // The doGet() runs once per HTTP GET request to this servlet.
     @Override
@@ -18,18 +21,18 @@ public class MathApp extends HttpServlet {
         PrintWriter out = response.getWriter();
         // Write the response message, in an HTML page
         CoreManager cm = CoreManager.getCoreManagerInstance();
-        out.println("<body>");
-        out.println("<div>"); 
-        out.println("<p>");
-        out.println(cm.render());
-        out.println("</p>");
-        out.println("</div>");
-        out.println("<div>");
-        out.println("<form action=\"application\" method=\"post\">");
-        out.println("<input type=\"text\" id=\"command\" name=\"command\" </input>");
-        out.println("<input type=\"submit\" value=\"Submit\"</input>");
-        out.println("</div>");
-        out.println("</body>");
+        String body = "<body>"
+            + "<div class=\"main\">"
+            + cm.render()
+            + "<div>"
+            + "<form action=\"application\" method=\"post\">"
+            + "<input type=\"text\" id=\"command\" name=\"command\" </input>"
+            + "<input type=\"submit\" value=\"Submit\"</input>"
+            + "</form>"
+            + "</div>"
+            + "</div>"
+            + "</body>";
+        out.println(head+body);
         out.close();  // Always close the output writer
     }
 
