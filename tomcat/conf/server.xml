@@ -149,6 +149,7 @@
                resourceName="UserDatabase"/>
       </Realm>
 
+     <!-- change host to domain -->
       <Host name="localhost"  appBase="webapps"
             unpackWARs="true" autoDeploy="true">
           <Context path="" docBase="mathApp" />
