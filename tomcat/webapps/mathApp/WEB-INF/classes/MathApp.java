@@ -10,6 +10,7 @@ public class MathApp extends HttpServlet {
     //todo add html head stuff
     final String head = "<head>"
     + "<link rel=\"stylesheet\" href=\"../../assets/style.css\">"
+    + "<link rel=\"stylesheet\" href=\"../../assets/bootstrap.css\""
     + "</head>";
     
     // The doGet() runs once per HTTP GET request to this servlet.
@@ -21,13 +22,19 @@ public class MathApp extends HttpServlet {
         PrintWriter out = response.getWriter();
         // Write the response message, in an HTML page
         CoreManager cm = CoreManager.getCoreManagerInstance();
-        String body = "<body>"
+        String body = "<body class=\"theme\">"
+            + "<div class=\"text-center\">"
+            + "<span class=\"title\">MathApp.xyz!</span>"
+            + "</div>"
             + "<div class=\"main\">"
             + cm.render()
-            + "<div>"
-            + "<form action=\"application\" method=\"post\">"
-            + "<input type=\"text\" id=\"command\" name=\"command\" </input>"
-            + "<input type=\"submit\" value=\"Submit\"</input>"
+            + "<br><hr>"
+            + "<div class=\"d-flex justify-content-center\">"
+            + "<form class=\"form-inline\" action=\"application\" method=\"post\">"
+            + "<div class=\"form-group mb-2\">"
+            + "<input class=\"form-control\" type=\"text\" id=\"command\" name=\"command\" </input>"
+            + "</div>"
+            + "<button class=\"btn btn-primary mb-2\" type=\"submit\">Submit</button>"
             + "</form>"
             + "</div>"
             + "</div>"
