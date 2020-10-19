@@ -149,7 +149,6 @@
                resourceName="UserDatabase"/>
       </Realm>
 
-     <!-- change host to domain -->
       <Host name="math-app.xyz"  appBase="webapps"
             unpackWARs="true" autoDeploy="true">
           <Alias>www.math-app.xyz</Alias>  
