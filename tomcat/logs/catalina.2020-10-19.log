@@ -1,0 +1,188 @@
+19-Oct-2020 12:27:24.751 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.38
+19-Oct-2020 12:27:24.754 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 10 2020 08:20:30 UTC
+19-Oct-2020 12:27:24.754 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.38.0
+19-Oct-2020 12:27:24.755 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+19-Oct-2020 12:27:24.755 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.15.6
+19-Oct-2020 12:27:24.755 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+19-Oct-2020 12:27:24.755 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home
+19-Oct-2020 12:27:24.755 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.2+9-LTS
+19-Oct-2020 12:27:24.755 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+19-Oct-2020 12:27:24.755 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat
+19-Oct-2020 12:27:24.755 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat
+19-Oct-2020 12:27:24.780 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-Oct-2020 12:27:24.780 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-Oct-2020 12:27:24.781 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-Oct-2020 12:27:24.781 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat/conf/logging.properties
+19-Oct-2020 12:27:24.781 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-Oct-2020 12:27:24.781 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+19-Oct-2020 12:27:24.788 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+19-Oct-2020 12:27:24.789 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+19-Oct-2020 12:27:24.789 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+19-Oct-2020 12:27:24.789 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat
+19-Oct-2020 12:27:24.789 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat
+19-Oct-2020 12:27:24.789 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat/temp
+19-Oct-2020 12:27:24.792 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/jamesellerbee/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+19-Oct-2020 12:27:25.073 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-80"]
+19-Oct-2020 12:27:25.123 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [611] milliseconds
+19-Oct-2020 12:27:25.186 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-Oct-2020 12:27:25.186 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.38]
+19-Oct-2020 12:27:25.460 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat/webapps/mathApp]
+19-Oct-2020 12:27:25.481 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat/webapps/mathApp] has finished in [20] ms
+19-Oct-2020 12:27:25.481 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat/webapps/manager]
+19-Oct-2020 12:27:25.519 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat/webapps/manager] has finished in [38] ms
+19-Oct-2020 12:27:25.519 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat/webapps/host-manager]
+19-Oct-2020 12:27:25.541 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat/webapps/host-manager] has finished in [22] ms
+19-Oct-2020 12:27:25.546 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-80"]
+19-Oct-2020 12:27:25.555 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [431] milliseconds
+19-Oct-2020 12:32:05.682 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+19-Oct-2020 12:32:05.717 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+19-Oct-2020 12:32:05.717 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mathApp] has started
+19-Oct-2020 12:32:05.736 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mathApp] is completed
+19-Oct-2020 12:38:45.918 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+19-Oct-2020 12:38:45.942 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+19-Oct-2020 12:38:45.942 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mathApp] has started
+19-Oct-2020 12:38:45.964 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mathApp] is completed
+19-Oct-2020 12:49:16.190 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+19-Oct-2020 12:49:16.216 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+19-Oct-2020 12:49:16.217 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mathApp] has started
+19-Oct-2020 12:49:16.232 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mathApp] is completed
+19-Oct-2020 12:50:16.259 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+19-Oct-2020 12:50:16.277 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+19-Oct-2020 12:50:16.277 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mathApp] has started
+19-Oct-2020 12:50:16.292 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mathApp] is completed
+19-Oct-2020 12:51:40.190 INFO [Thread-3] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-80"]
+19-Oct-2020 12:51:40.197 INFO [Thread-3] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+19-Oct-2020 12:51:40.211 INFO [Thread-3] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-80"]
+19-Oct-2020 12:51:40.252 INFO [Thread-3] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-80"]
+19-Oct-2020 12:51:43.065 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.38
+19-Oct-2020 12:51:43.067 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 10 2020 08:20:30 UTC
+19-Oct-2020 12:51:43.068 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.38.0
+19-Oct-2020 12:51:43.068 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+19-Oct-2020 12:51:43.068 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.15.6
+19-Oct-2020 12:51:43.068 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+19-Oct-2020 12:51:43.068 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home
+19-Oct-2020 12:51:43.068 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.2+9-LTS
+19-Oct-2020 12:51:43.068 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+19-Oct-2020 12:51:43.068 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat
+19-Oct-2020 12:51:43.069 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat
+19-Oct-2020 12:51:43.081 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-Oct-2020 12:51:43.081 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-Oct-2020 12:51:43.082 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-Oct-2020 12:51:43.082 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat/conf/logging.properties
+19-Oct-2020 12:51:43.082 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-Oct-2020 12:51:43.082 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+19-Oct-2020 12:51:43.090 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+19-Oct-2020 12:51:43.090 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+19-Oct-2020 12:51:43.091 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+19-Oct-2020 12:51:43.091 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat
+19-Oct-2020 12:51:43.091 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat
+19-Oct-2020 12:51:43.091 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat/temp
+19-Oct-2020 12:51:43.095 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/jamesellerbee/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+19-Oct-2020 12:51:43.365 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-80"]
+19-Oct-2020 12:51:43.394 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [516] milliseconds
+19-Oct-2020 12:51:43.444 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-Oct-2020 12:51:43.444 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.38]
+19-Oct-2020 12:51:43.673 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat/webapps/mathApp]
+19-Oct-2020 12:51:43.697 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat/webapps/mathApp] has finished in [23] ms
+19-Oct-2020 12:51:43.698 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat/webapps/manager]
+19-Oct-2020 12:51:43.742 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat/webapps/manager] has finished in [43] ms
+19-Oct-2020 12:51:43.742 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat/webapps/host-manager]
+19-Oct-2020 12:51:43.774 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat/webapps/host-manager] has finished in [32] ms
+19-Oct-2020 12:51:43.782 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-80"]
+19-Oct-2020 12:51:43.796 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [401] milliseconds
+19-Oct-2020 12:55:23.882 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+19-Oct-2020 12:55:23.917 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+19-Oct-2020 12:55:23.917 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mathApp] has started
+19-Oct-2020 12:55:23.935 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mathApp] is completed
+19-Oct-2020 13:02:54.139 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+19-Oct-2020 13:02:54.175 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+19-Oct-2020 13:02:54.176 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mathApp] has started
+19-Oct-2020 13:02:54.203 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mathApp] is completed
+19-Oct-2020 14:31:06.908 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+19-Oct-2020 14:31:06.946 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+19-Oct-2020 14:31:06.946 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mathApp] has started
+19-Oct-2020 14:31:06.960 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mathApp] is completed
+19-Oct-2020 14:31:16.138 INFO [Thread-3] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-80"]
+19-Oct-2020 14:31:16.153 INFO [Thread-3] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+19-Oct-2020 14:31:16.175 INFO [Thread-3] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-80"]
+19-Oct-2020 14:31:16.205 INFO [Thread-3] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-80"]
+19-Oct-2020 14:31:18.259 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.38
+19-Oct-2020 14:31:18.262 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 10 2020 08:20:30 UTC
+19-Oct-2020 14:31:18.262 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.38.0
+19-Oct-2020 14:31:18.262 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+19-Oct-2020 14:31:18.262 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.15.6
+19-Oct-2020 14:31:18.262 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+19-Oct-2020 14:31:18.262 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home
+19-Oct-2020 14:31:18.263 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.2+9-LTS
+19-Oct-2020 14:31:18.263 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+19-Oct-2020 14:31:18.263 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat
+19-Oct-2020 14:31:18.263 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat
+19-Oct-2020 14:31:18.278 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-Oct-2020 14:31:18.278 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-Oct-2020 14:31:18.278 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-Oct-2020 14:31:18.279 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat/conf/logging.properties
+19-Oct-2020 14:31:18.279 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-Oct-2020 14:31:18.279 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+19-Oct-2020 14:31:18.280 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+19-Oct-2020 14:31:18.280 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+19-Oct-2020 14:31:18.280 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+19-Oct-2020 14:31:18.280 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat
+19-Oct-2020 14:31:18.280 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat
+19-Oct-2020 14:31:18.280 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat/temp
+19-Oct-2020 14:31:18.282 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/jamesellerbee/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+19-Oct-2020 14:31:18.526 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-80"]
+19-Oct-2020 14:31:18.554 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [481] milliseconds
+19-Oct-2020 14:31:18.602 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-Oct-2020 14:31:18.602 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.38]
+19-Oct-2020 14:31:18.831 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat/webapps/mathApp]
+19-Oct-2020 14:31:18.851 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat/webapps/mathApp] has finished in [19] ms
+19-Oct-2020 14:31:18.851 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat/webapps/manager]
+19-Oct-2020 14:31:18.900 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat/webapps/manager] has finished in [49] ms
+19-Oct-2020 14:31:18.901 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat/webapps/host-manager]
+19-Oct-2020 14:31:18.935 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat/webapps/host-manager] has finished in [34] ms
+19-Oct-2020 14:31:18.941 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-80"]
+19-Oct-2020 14:31:18.955 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [400] milliseconds
+19-Oct-2020 14:35:19.048 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+19-Oct-2020 14:35:19.084 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+19-Oct-2020 14:35:19.084 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mathApp] has started
+19-Oct-2020 14:35:19.105 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/mathApp] is completed
+19-Oct-2020 14:35:52.428 INFO [Thread-3] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-80"]
+19-Oct-2020 14:35:52.434 INFO [Thread-3] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+19-Oct-2020 14:35:52.458 INFO [Thread-3] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-80"]
+19-Oct-2020 14:35:52.486 INFO [Thread-3] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-80"]
+19-Oct-2020 14:35:55.885 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.38
+19-Oct-2020 14:35:55.888 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 10 2020 08:20:30 UTC
+19-Oct-2020 14:35:55.889 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.38.0
+19-Oct-2020 14:35:55.889 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+19-Oct-2020 14:35:55.889 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.15.6
+19-Oct-2020 14:35:55.889 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+19-Oct-2020 14:35:55.889 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home
+19-Oct-2020 14:35:55.889 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.2+9-LTS
+19-Oct-2020 14:35:55.889 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+19-Oct-2020 14:35:55.890 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat
+19-Oct-2020 14:35:55.890 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat
+19-Oct-2020 14:35:55.904 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-Oct-2020 14:35:55.904 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-Oct-2020 14:35:55.904 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-Oct-2020 14:35:55.904 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat/conf/logging.properties
+19-Oct-2020 14:35:55.904 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-Oct-2020 14:35:55.905 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+19-Oct-2020 14:35:55.905 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+19-Oct-2020 14:35:55.905 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+19-Oct-2020 14:35:55.905 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+19-Oct-2020 14:35:55.905 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat
+19-Oct-2020 14:35:55.905 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat
+19-Oct-2020 14:35:55.905 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat/temp
+19-Oct-2020 14:35:55.907 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/jamesellerbee/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+19-Oct-2020 14:35:56.212 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-80"]
+19-Oct-2020 14:35:56.256 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [589] milliseconds
+19-Oct-2020 14:35:56.326 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-Oct-2020 14:35:56.326 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.38]
+19-Oct-2020 14:35:56.600 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat/webapps/mathApp]
+19-Oct-2020 14:35:56.622 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat/webapps/mathApp] has finished in [21] ms
+19-Oct-2020 14:35:56.622 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat/webapps/manager]
+19-Oct-2020 14:35:56.658 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat/webapps/manager] has finished in [35] ms
+19-Oct-2020 14:35:56.658 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat/webapps/host-manager]
+19-Oct-2020 14:35:56.683 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/jamesellerbee/Documents/GitHub/mathLanguageWebApp/tomcat/webapps/host-manager] has finished in [25] ms
+19-Oct-2020 14:35:56.688 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-80"]
+19-Oct-2020 14:35:56.699 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [443] milliseconds
