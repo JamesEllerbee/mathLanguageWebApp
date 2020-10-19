@@ -59,7 +59,7 @@ public class MathApp extends HttpServlet {
             response.addCookie(userCookie);
         } else {
             String sessionId = session.getId();
-            userCookie = new Cookie("JSSESSIONID", sessionId);
+            userCookie = new Cookie("JSESSIONID", sessionId);
             response.addCookie(userCookie);
         }
         response.setContentType("text/html");
