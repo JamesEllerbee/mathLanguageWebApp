@@ -15,8 +15,8 @@ public class MathApp extends HttpServlet {
     + "</head>";
 
     final String body = "<body class=\"theme\">"
-                + "<div class=\"text-center\">"
-                    + "<span class=\"title\">MathApp.xyz!</span>"
+                + "<div class=\"jumbotron text-center\">"
+                    + "<span class=\"display-4\">MathApp.xyz!</span>"
                 + "</div>"
                 + "<div class=\"main\">"
                     + "%s"
@@ -67,12 +67,9 @@ public class MathApp extends HttpServlet {
         CoreManager cm = CoreManager.getCoreManagerInstance(userCookie.getValue());
         String commandString = request.getParameter("command");
         cm.appendToBody("> " + commandString);
-        Command cmd = CommandDirectory.getCommand(commandString);
+        Command cmd = CommandDirectory.getCommand(commandString, userCookie.getValue());
         if(cmd != null) {
             cmd.performAction(commandString, sessionId);
-        }
-        else{
-            cm.appendToBody("<font color=\"red\">Error.</font> No such command!");
         }
         PrintWriter out = response.getWriter();
         out.println(head + String.format(body, cm.render()));
