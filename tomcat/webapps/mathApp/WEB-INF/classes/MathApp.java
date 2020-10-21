@@ -65,7 +65,7 @@ public class MathApp extends HttpServlet {
         response.setContentType("text/html");
         String sessionId = session.getId();
         CoreManager cm = CoreManager.getCoreManagerInstance(userCookie.getValue());
-        String commandString = request.getParameter("command");
+        String commandString = request.getParameter("command").toLowerCase();
         cm.appendToBody("> " + commandString);
         Command cmd = CommandDirectory.getCommand(commandString, userCookie.getValue());
         if(cmd != null) {
