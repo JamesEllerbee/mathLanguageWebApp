@@ -69,7 +69,13 @@ public class MathApp extends HttpServlet {
         cm.appendToBody("> " + commandString);
         Command cmd = CommandDirectory.getCommand(commandString, userCookie.getValue());
         if(cmd != null) {
-            cmd.performAction(commandString, sessionId);
+            if(cm.getCurrentMode() == MODE.INTERACTIVE) {
+                //TODO interative step
+                cm.appendToBody("What is the result of the this step?");
+            } else {
+                cmd.performAction(commandString, sessionId);
+            }
+            
         }
         PrintWriter out = response.getWriter();
         out.println(head + String.format(body, cm.render()));
