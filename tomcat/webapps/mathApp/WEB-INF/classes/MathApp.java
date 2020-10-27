@@ -68,10 +68,10 @@ public class MathApp extends HttpServlet {
         String commandString = request.getParameter("command").toLowerCase();
         cm.appendToBody("> " + commandString);
         Command cmd = CommandDirectory.getCommand(commandString, userCookie.getValue());
-        if(cmd != null) {
+        if(cmd != null) {   
             if(cm.getCurrentMode() == MODE.INTERACTIVE) {
-                //TODO interative step
-                cm.appendToBody("What is the result of the this step?");
+                cm.appendToBody("<img src=\"./assets/img/pencil-square.svg\" alt=\"\" width=\"32\" height=\"32\" title=\"Your Input\">> " + commandString);
+                cm.checkStep(commandString);
             } else {
                 cmd.performAction(commandString, sessionId);
             }
