@@ -46,7 +46,8 @@ public class MathApp extends HttpServlet {
         }
         response.setContentType("text/html");
         CoreManager cm = CoreManager.getCoreManagerInstance(userCookie.getValue());
-        cm.appendToBody(ALERT_TYPE.INFORMATION, "The root is" + cm.getRoot());
+        cm.appendToBody(ALERT_TYPE.INFORMATION, "The root is " + cm.getRoot());
+        cm.appendToBody(ALERT_TYPE.INFORMATION, "The current working directory is " + System.getProperty("user.dir"));
         PrintWriter out = response.getWriter();
         out.println(head+String.format(body, cm.render()));
         out.close();

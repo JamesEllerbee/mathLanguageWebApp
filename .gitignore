@@ -1,4 +1,5 @@
 tomcat/logs/
 tomcat/webapps/mathApp/*.png
-tomcat/webapps/mathApp/*.class
-tomcate/temp/*
+tomcat/webapps/mathApp/WEB-INF/classes/*.class
+tomcat/temp/*
+tomcat/work/*
