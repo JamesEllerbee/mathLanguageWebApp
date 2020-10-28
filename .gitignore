@@ -3,3 +3,4 @@ tomcat/webapps/mathApp/*.png
 tomcat/webapps/mathApp/WEB-INF/classes/*.class
 tomcat/temp/*
 tomcat/work/*
+tomcat/bin/.mathappconf
