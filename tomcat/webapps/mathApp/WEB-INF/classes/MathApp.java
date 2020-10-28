@@ -4,6 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import csu.mathapp.*;
+import java.io.File;
 
 @WebServlet("/application") //configure the request url for this servlet 
 public class MathApp extends HttpServlet {
@@ -33,6 +34,8 @@ public class MathApp extends HttpServlet {
     
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+        File f = new File("./HERE");
+        f.createNewFile();
         HttpSession session = request.getSession();
         Cookie userCookie;
         if(request.getParameter("JSESSIONID")!=null) {
