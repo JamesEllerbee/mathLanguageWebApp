@@ -34,8 +34,6 @@ public class MathApp extends HttpServlet {
     
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-        File f = new File("./HERE");
-        f.createNewFile();
         HttpSession session = request.getSession();
         Cookie userCookie;
         if(request.getParameter("JSESSIONID")!=null) {
