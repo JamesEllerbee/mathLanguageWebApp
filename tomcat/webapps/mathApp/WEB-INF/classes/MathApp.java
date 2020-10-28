@@ -4,6 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import csu.mathapp.*;
+import java.io.File;
 
 @WebServlet("/application") //configure the request url for this servlet 
 public class MathApp extends HttpServlet {
@@ -46,7 +47,7 @@ public class MathApp extends HttpServlet {
         response.setContentType("text/html");
         CoreManager cm = CoreManager.getCoreManagerInstance(userCookie.getValue());
         PrintWriter out = response.getWriter();
-        out.println(head+String.format(body, cm.render()));
+        out.println(head+String.format(body, cm.render()));     
         out.close();
     }
 
