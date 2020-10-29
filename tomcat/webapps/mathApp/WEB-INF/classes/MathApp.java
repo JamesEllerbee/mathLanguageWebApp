@@ -4,13 +4,14 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import csu.mathapp.*;
-import java.io.File;
 
-@WebServlet("/application") //configure the request url for this servlet 
+@WebServlet("/v1.0")
 public class MathApp extends HttpServlet {
 
     final String head = "<head>"
-        + "<title>Math Tutoring System</title>"
+        + "<meta charset=\"UTF-8\">"
+        + "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"
+        + "<title>MathApp</title>"
         + "<link rel=\"stylesheet\" href=\"../../assets/style.css\">"
         + "<link rel=\"stylesheet\" href=\"../../assets/bootstrap.css\""
     + "</head>";
