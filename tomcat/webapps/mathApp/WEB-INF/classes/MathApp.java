@@ -4,32 +4,38 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import csu.mathapp.*;
-import java.io.File;
 
-@WebServlet("/application") //configure the request url for this servlet 
+@WebServlet("/v1.0")
 public class MathApp extends HttpServlet {
 
+    String webAppPath = "/v1.0";
+
     final String head = "<head>"
-        + "<title>Math Tutoring System</title>"
-        + "<link rel=\"stylesheet\" href=\"../../assets/style.css\">"
-        + "<link rel=\"stylesheet\" href=\"../../assets/bootstrap.css\""
+        + "<meta charset=\"UTF-8\">"
+        + "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"
+        + "<title>MathApp</title>"
+        + "<link rel=\"stylesheet\" href=\"./assets/css/style.css\">"
+        + "<link rel=\"stylesheet\" href=\"./assets/css/bootstrap.css\""
     + "</head>";
 
-    final String body = "<body class=\"theme\">"
+    final String body = 
+                  "<body class=\"theme\">"
                 + "<div class=\"jumbotron text-center\">"
                     + "<span class=\"display-4\">MathApp.xyz!</span>"
                 + "</div>"
-                + "<div class=\"main\">"
+                + "<div class=\"main overflow-auto\" id=\"mainDiv\">"
                     + "%s"
                     + "<br><hr>"
                     + "<div class=\"d-flex justify-content-center\">"
-                        + "<form class=\"form-inline\" action=\"application\" method=\"post\">"
-                        + "<div class=\"form-group mb-2\">"
-                        + "<input class=\"form-control\" type=\"text\" id=\"command\" name=\"command\" </input>"
-                    + "</div>"
-                        +    "<button class=\"btn btn-primary mb-2\" type=\"submit\">Submit</button>"
+                        + "<form class=\"form-inline\" action=\"" + webAppPath +"\" method=\"post\">"
+                            + "<div class=\"form-group mb-2\">"
+                                + "<input class=\"form-control\" type=\"text\" id=\"command\" name=\"command\" </input>"
+                            + "</div>"
+                            + "<button class=\"btn btn-primary mb-2\" type=\"submit\">Submit</button>"
                         + "</form>" 
+                    + "</div>"
                 + "</div>"
+                + "<script src=\"./assets/js/autoScroll.js\"></script>"
             + "</body>";
     
     @Override
@@ -67,16 +73,15 @@ public class MathApp extends HttpServlet {
         String sessionId = session.getId();
         CoreManager cm = CoreManager.getCoreManagerInstance(userCookie.getValue());
         String commandString = request.getParameter("command").toLowerCase();
-        cm.appendToBody("> " + commandString);
-        Command cmd = CommandDirectory.getCommand(commandString, userCookie.getValue());
-        if(cmd != null) {   
-            if(cm.getCurrentMode() == MODE.INTERACTIVE) {
-                cm.appendToBody("<img src=\"./assets/img/pencil-square.svg\" alt=\"\" width=\"32\" height=\"32\" title=\"Your Input\">> " + commandString);
-                cm.checkStep(commandString);
-            } else {
-                cmd.performAction(commandString, sessionId);
+        if(cm.getCurrentMode() == MODE.INTERACTIVE && cm.getExpectedInputs().size() > 0) {
+            cm.appendToBody("<img src=\"./assets/img/pencil-square.svg\" alt=\"\" width=\"32\" height=\"32\" title=\"Your Input\">> " + commandString);
+            cm.checkStep(commandString);
+        } else {
+            cm.appendToBody("> " + commandString);
+            Command cmd = CommandDirectory.getCommand(commandString, userCookie.getValue());
+            if(cmd != null) {   
+                    cmd.performAction(commandString, sessionId);           
             }
-            
         }
         PrintWriter out = response.getWriter();
         out.println(head + String.format(body, cm.render()));
