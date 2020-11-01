@@ -17,6 +17,7 @@ body{
 }
 
 .main{
+    height: 70vh;
     border: groove;
     border-radius: 12px;
     margin-top: 2%;
