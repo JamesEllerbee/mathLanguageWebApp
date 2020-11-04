@@ -34,7 +34,20 @@ body{
 .content-home{
     border: groove;
     background-color: white;
+    border-radius: 12px;
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.wrapper {
+    display:flex;
+    justify-content: space-between;
+}
+
+.sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 0 15px
 }
