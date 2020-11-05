@@ -8,119 +8,102 @@
     <link rel="stylesheet" href="../assets/css/bootstrap.css" />
 </head>
 <body class="theme">
-    <div class="container-fluid">
-        <div class="row">
-            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-                <h4>Commands</h4>
-                <div class="sidebar-sticky pt-3">
-                    <ul class="nav flex-column">
-                        <li class="nav-item"><a class="nav-link" href="#help">Help</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#current-mode">Current Mode</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#change-mode">Change Mode</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#simplify">Simplify</a></li>
-                    </ul>
-                </div>
-            </nav>
+
+    <nav class="navbar navbar-exapnd-lg navbar-light bg-light border">
+        <a class="navbar-brand" href="#">MathApp</a>
+        <ul class="navbar-nav mr-auto">
+            <a class="nav-link" href="/">Home</a>
+        </ul>
+    </nav>
+ 
+    <div class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="sidebar bg-light">
+                    <div class="sidebar-sticky">
+                        <h4>Commands</h4>
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link" href="#help">Help</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#current-mode">Current Mode</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#change-mode">Change Mode</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#simplify">Simplify</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#solve-for">Solve for</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#show-graph-for">Show graph for</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="col mt-3">
+                    <main class="content" role="main">
+                        <div class="jumbotron text-center">
+                            <span class="display-4">Documentation</span>
+                        </div>
+                        <h3 class="text-center">Here you can find more about the available commands and what they do within the application.</h3> <br />
+                        <div class="card mt-2 bg-light" id="help">
+                            <div class="card-title text-center"><h4>Help</h4></div>
+                            <div class="card-body">
+                                <span><strong>Description</strong> Displays help information for all commands or a specific command.</span> <br/>
+                                <span><strong>Usage</strong> help, help [command].</span>
+                            </div>
+                        </div>
+                        <div class="card mt-2 bg-light" id="current-mode">
+                            <div class="card-title text-center">
+                                <h4>Current Mode</h4>
+                            </div>
+                            <div class="card-body">
+                                <span><strong>Description</strong> This command outputs the current output mode for the application</span>
+                            </div>
+                        </div>
+                        <div class="card mt-2 bg-light" id="change-mode">
+                            <div class="card-title text-center">
+                                <h4>Change Mode</h4>
+                            </div>
+                            <div class="card-body">
+                                <span><strong>Description</strong> This command changes the current output mode for the application to the specified mode.</span> <br />
+                                <span><strong>Usage</strong> change mode [mode]</span>
+                                <span>The available modes are</span>
+                                <ul>
+                                    <li>step by step</li>
+                                    <li>output</li>
+                                    <li>interactive</li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                        <div class="card mt-2 bg-light" id="simplify">
+                            <div class="card-title text-center">
+                                <h4>Simplify</h4>
+                            </div>
+                            <div class="card-body">
+                                <span><strong>Description</strong> Simplifies the given expression.</span> <br />
+                                <span><strong>Usage</strong> simplify [expression]</span>
+                            </div>
+                        </div>
         
-            <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4" role="main">
-                <div class = "jumbotron text-center">
-                    <span class="display-4">Documentation</span>
+                        <div class="card mt-2 bg-light" id="solve-for">
+                            <div class="card-title text-center">
+                                <h4>Solve for</h4>
+                            </div>
+                            <div class="card-body">
+                                <span><strong>Description</strong> Performs the equation solver action.</span> <br />
+                                <span><strong>Usage</strong> solve for [symbol], [equation] </span>
+                            </div>
+                        </div>
+
+                        <div class="card mt-2 bg-light" id="show-graph-for">
+                            <div class="card-title text-center">
+                                <h4>Show graph for</h4>
+                            </div>
+                            <div class="card-body">
+                                <span><strong>Description</strong> Performs the graphing action and output an image of the graph.</span> <br />
+                                <span><strong>Usage</strong> show graph for [functinon], [domain] </span>
+                            </div>
+                        </div>
+
+                    </main>
                 </div>
-                    <h3 class="text-center">Here you can find more about the available commands and what they do within the application.</h3> <br />
-                    <div class="card" id="help">
-                        <div class="card-title text-center"><h4>Help</h4></div>
-                        <div class="card-body">
-                            <span><strong>Description</strong> Displays help information for all commands or a specific command.</span> <br/>
-                            <span><strong>Usage</strong> help, help [command].</span>
-                        </div>
-                    </div>
-                    <div class="card" id="current-mode">
-                        <div class="card-title text-center">
-                            <h4>Current Mode</h4>
-                        </div>
-                        <div class="card-body">
-                            <span><strong>Description</strong> This command outputs the current output mode for the application</span>
-                        </div>
-                    </div>
-                    <div class="card" id="change-mode">
-                        <div class="card-title text-center">
-                            <h4>Change Mode</h4>
-                        </div>
-                        <div class="card-body">
-                            <span><strong>Description</strong> This command changes the current output mode for the application to the specified mode.</span> <br />
-                            <span><strong>Usage</strong> change mode [mode]</span>
-                            <span>The available modes are</span>
-                            <ul>
-                                <li>step by step</li>
-                                <li>output</li>
-                                <li>interactive</li>
-                            </ul>
-                            
-                        </div>
-                    </div>
-                    <div class="card" id="simplify">
-                        <div class="card-title text-center">
-                            <h4>Simplify</h4>
-                        </div>
-                        <div class="card-body">
-                            <span><strong>Description</strong> Simplifies the given expression.</span> <br />
-                            <span><strong>Usage</strong> simplify [expression]</span>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-title">
-
-                        </div>
-                        <div class="card-body">
-
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-title">
-
-                        </div>
-                        <div class="card-body">
-                            
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-title">
-
-                        </div>
-                        <div class="card-body">
-                            
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-title">
-
-                        </div>
-                        <div class="card-body">
-                            
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-title">
-
-                        </div>
-                        <div class="card-body">
-                            
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-title">
-
-                        </div>
-                        <div class="card-body">
-                            
-                        </div>
-                    </div>
-                </div>
-            </main>
+            </div>
         </div>
     </div>
-    <script src="../assets/js/bootstrap/bundle.min.js"></script>
-    
 </body>
 </html>

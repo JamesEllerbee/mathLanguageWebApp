@@ -1,0 +1,1 @@
+document.getElementById("mainDiv").scrollTop = document.getElementById("mainDiv").scrollHeight;
