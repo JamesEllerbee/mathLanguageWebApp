@@ -5,10 +5,10 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import xyz.mathapp.*;
 
-@WebServlet("/v1.2.3")
+@WebServlet("/v1.2.4")
 public class MathAppCurrent extends HttpServlet {
 
-    String webAppPath = "/v1.2.3";
+    String webAppPath = "/v1.2.4";
 
     final String head = "<head>"
         + "<meta charset=\"UTF-8\">"
@@ -20,6 +20,12 @@ public class MathAppCurrent extends HttpServlet {
 
     final String body = 
                   "<body class=\"theme\">"
+                    + "<nav class=\"navbar navbar-exapnd-lg navbar-light bg-light border\">"
+                        + "<a class=\"navbar-brand\" href=\"#\">MathApp</a>"
+                        + "<ul class=\"navbar-nav mr-auto\">"
+                            + "<a class=\"nav-link\" href=\"/\">Home</a>"
+                        + "</ul>"
+                    + "</nav>"
                 + "<div class=\"jumbotron text-center\">"
                     + "<span class=\"display-4\">MathApp.xyz!</span>"
                 + "</div>"
@@ -28,10 +34,10 @@ public class MathAppCurrent extends HttpServlet {
                     + "<br><hr>"
                     + "<div class=\"d-flex justify-content-center\">"
                         + "<form class=\"form-inline\" action=\"" + webAppPath +"\" method=\"post\">"
-                            + "<div class=\"form-group mb-2\">"
-                                + "<input class=\"form-control\" type=\"text\" id=\"command\" name=\"command\" </input>"
+                            + "<div class=\"form-group mr-2\">"
+                                + "<input class=\"input form-control\" type=\"text\" id=\"command\" name=\"command\" </input>"
                             + "</div>"
-                            + "<button class=\"btn btn-primary mb-2\" type=\"submit\">Submit</button>"
+                            + "<button class=\"btn btn-primary\" type=\"submit\">Submit</button>"
                         + "</form>" 
                     + "</div>"
                 + "</div>"
@@ -73,7 +79,7 @@ public class MathAppCurrent extends HttpServlet {
         String sessionId = session.getId();
         CoreManager cm = CoreManager.getCoreManagerInstance(userCookie.getValue());
         String commandString = request.getParameter("command").toLowerCase();
-        if(cm.getCurrentMode() == MODE.INTERACTIVE && cm.getExpectedInputs().size() > 0) {
+        if(cm.getCurrentMode() == MODE.INTERACTIVE && cm.getSteps().size() > 0) {
             cm.appendToBody("<img src=\"./assets/img/pencil-square.svg\" alt=\"\" width=\"32\" height=\"32\" title=\"Your Input\">> " + commandString);
             cm.checkStep(commandString);
         } else {

@@ -6,7 +6,6 @@ body{
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    height: 100vh;
 }
 
 .theme{
@@ -21,10 +20,10 @@ body{
     height: 70vh;
     border: groove;
     border-radius: 12px;
-    margin-top: 2%;
-    margin-left: 20%;
+    margin-left: 15%;
     padding: 1%;
-    margin-right: 20%;
+    margin-right: 15%;
+    margin-bottom: 1%;
     background-color: white;
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -50,4 +49,8 @@ body{
     position: sticky;
     top: 0;
     padding: 0 15px
+}
+
+.input {
+    width: 40vw;
 }

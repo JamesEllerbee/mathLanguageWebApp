@@ -3,12 +3,12 @@ import java.util.HashMap;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
-import csu.mathapp.*;
+import xyz.mathapp.*;
 
-@WebServlet("/v1.2.2")
+@WebServlet("/v1.2.3")
 public class MathAppOld extends HttpServlet {
 
-    String webAppPath = "/v1.2.2";
+    String webAppPath = "/v1.2.3";
 
     final String head = "<head>"
         + "<meta charset=\"UTF-8\">"

@@ -152,7 +152,12 @@
       <Host name="math-app.xyz"  appBase="webapps"
             unpackWARs="true" autoDeploy="true">
           <Alias>math-app.xyz</Alias>  
-          <Context path="" docBase="mathApp" />
+
+          <Context path="" 
+          docBase="mathApp"
+          cachingAllowed="false"
+          antiResourceLocking="false"
+          cookies="true"  />
         <!-- SingleSignOn valve, share authentication between web applications
              Documentation at: /docs/config/valve.html -->
         <!--
