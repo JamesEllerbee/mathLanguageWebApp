@@ -5,10 +5,10 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import xyz.mathapp.*;
 
-@WebServlet("/v1.2.4")
+@WebServlet("/application")
 public class MathAppCurrent extends HttpServlet {
 
-    String webAppPath = "/v1.2.4";
+    String webAppPath = "/application";
 
     final String head = "<head>"
         + "<meta charset=\"UTF-8\">"
